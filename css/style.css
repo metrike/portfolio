@@ -1,0 +1,290 @@
+/*------------- Mise en page de la page ----------*/
+html {
+    height: 100%;
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    position: relative;
+    background-color:#33597a;
+    width: auto;
+}
+/*------Bare de Navigation*/
+
+
+nav.menu-nav .barre li.bouton{
+    display: inline-block;
+}
+
+nav.menu-nav .barre a {
+    list-style-type:none;
+    color: black;
+    background-color: teal;
+    text-decoration: none;
+    padding : 25px;
+}
+
+nav.menu-nav .barre li.bouton:hover a{
+    color: teal;
+    background-color: black;
+    transition: 0.3s;
+    padding: 25px;
+}
+
+.barre{
+    background-color:teal;
+    padding: 23px;
+    margin: 0px;
+    margin-bottom: 2px;
+    margin-right: 0%;
+    width: 99%;
+    position: fixed;
+    display: block;
+    top: 0;
+    /* z-index: 999; */
+}
+/*---------- Haut de page ------*/
+
+
+header{
+    background-color: #33597a;
+    color: black;
+    display: block;
+}
+
+.nom{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    width: 20%;
+}
+/* --------Pied de page-----*/
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color:teal;
+    color: black;
+    width: 100%;
+    position: absolute; 
+    height: 90px;
+    bottom: 0;
+}
+
+    /*---------- Page  Contact ------------*/
+
+.center{
+    text-align: center ;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid teal;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 14px;
+    resize: vertical;
+    font-size: 100%;
+}
+input[type=submit] {
+    background-color:teal ;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=reset] {
+    background-color:teal ;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: black;
+}
+.formulaire{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+fieldset{
+    padding: 0px;
+   margin-top: 10em;
+   margin-right: 15em;
+   margin-left: 15em;
+   margin-bottom: 4em;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+
+
+/*---------------- Bouton haut de page ---------*/
+
+#haut {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+#haut img {
+    width: 50x;
+    height: 50px;
+}
+
+
+/*------- Animation carré ----*/
+
+
+/* /* .row:after {
+    content: "";
+    display: inline-block;
+    clear:both;
+    /* top: 15px; */
+    /* position: relative 
+    ;
+  } */
+
+.column:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    background-color: black;
+    color:white; 
+
+}
+
+
+  .column {
+    font-size: 2em;
+    vertical-align:middle;
+    line-height: 250px;
+    text-align: center;
+    position: relative;
+    margin-top: 2.5em;
+    margin-left: 4em;
+    float: left;
+    width: 20%;
+    padding: 0px;
+    height: 350px;
+    background-color:teal;
+    color: white;
+
+  }
+
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
+
+
+.mot_carre:hover a{
+    background-color: black;
+    cursor: pointer;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    color: teal;
+
+}
+
+ .mot_carre { 
+    text-decoration: none;
+    color: black;
+}   
+
+ /*-------- ZOOM --------------*/
+ .zoom-out div a {
+	-webkit-transform: scale(1.25);
+	transform: scale(1.25);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-out div:hover a {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+/* -------- Fil d'Ariane */
+
+.fil li {
+    position: fixed;
+    display: block;
+    top: 12%;
+    /* right: 50%;*/
+    left: 45%; 
+    padding-right: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+.fil{
+    padding-left: 0;
+}
+
+/* Réseaux Sociaux */
+
+.social{
+    display: inline-block;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    position: fixed;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    position:relative;
+    top: 175px;
+}
+
+.upec {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(0%) translateY(-1%);
+    right: 1.5%;
+    width: 240px;
+    height: 108px;
+}
+
+
+.content {
+    display: inline-block;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font: 25px Georgia, "Times New Roman", Times, serif;
+    font-size: 12px;
+    width:250px;
+}
+
+.texte_footer{
+    font-size: 1.5em;
+    font-weight: bold;
+}

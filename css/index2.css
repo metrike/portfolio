@@ -1,0 +1,187 @@
+/*------------- Mise en page de la page ----------*/
+html {
+    height: 100%;
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    position: relative;
+    background-color:#33597a;
+    width: 100% ;
+    padding-bottom: 150px;
+}
+
+/*------Bare de Navigation*/
+
+nav.menu-nav .barre li.bouton{
+    display: inline-block;
+}
+
+nav.menu-nav .barre a {
+    list-style-type:none;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    padding : 25px;
+}
+
+nav.menu-nav .barre li.bouton:hover a{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+    padding: 25px;
+}
+.barre{
+    background-color:teal;
+    padding: 23px;
+    margin: 0px;
+    margin-bottom: 2px;
+    margin-right: 0%;
+    width: 99%;
+    position: fixed;
+    display: block;
+    top: 0;
+    /* z-index: 999; */
+}
+/*---------- Haut de page ------*/
+
+
+header{
+    background-color: #33597a;
+    color: black;
+    display: block;
+    position: fixed;
+    z-index: 99999;
+}
+
+.nom{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    width: 20%;
+    text-align: right;
+}
+/* --------Pied de page-----*/
+footer{
+  padding: 0px;
+  background-color:teal;
+  color: black;
+  width: 100%;
+  position: absolute; 
+  height: 130px;
+  bottom: 0;
+}
+
+
+
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    z-index: 999;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+
+
+/*---------------- Bouton haut de page ---------*/
+
+#haut {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+#haut img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+ 
+
+/* Réseaux Sociaux */
+
+.social{
+    display: inline-block;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    position: fixed;
+    left: 0;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    position:relative;
+    top: 700px;
+}
+
+.upec {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-4%) translateY(-1%);
+    right: 1.5%;
+    width: 240px;
+    height: 108px;
+}
+
+
+
+.texte_footer{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.carte{
+    z-index: 3;
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    /* z-index: 8;
+    transform: translateX(150%) translateY(50.5%); */
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .accueil {
+    position: absolute;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    width: 28ch;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateX(50%) translateY(200%) ;
+    animation: typing 4s steps(28), caret 1s steps(1) forwards;
+   
+  }
+ 
+  .text {
+    float: left;
+    width: 60%;
+    background-color: #303030;
+    border-radius: 4px;
+    padding: 1%;
+    margin-right: 5%;
+  }

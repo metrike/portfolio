@@ -1,0 +1,145 @@
+/*------------- Mise en page de la page ----------*/
+html {
+    height: 100%;
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    position: relative;
+    background-color:#33597a;
+    width: 100%;
+    padding-bottom: 125px;
+}
+/*------Bare de Navigation*/
+
+
+nav.menu-nav .barre li.bouton{
+    display: inline-block;
+}
+
+nav.menu-nav .barre a {
+    list-style-type:none;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    padding : 25px;
+}
+
+nav.menu-nav .barre li.bouton:hover a{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+    padding: 25px;
+}
+
+.barre{
+    background-color:teal;
+    padding: 23px;
+    margin: 0px;
+    margin-bottom: 2px;
+    margin-right: 0%;
+    width: 99%;
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 999;
+}
+/*---------- Haut de page ------*/
+
+
+header{
+    background-color: #33597a;
+    color: black;
+    display: block;
+
+}
+
+.nom{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    width: 20%;
+}
+/* --------Pied de page-----*/
+footer{
+    padding: 10px;
+    background-color:teal;
+    color: black;
+    width: 100%;
+    position: absolute; 
+    height: 100px;
+    bottom: 0;
+}
+
+
+/*---------------- Bouton haut de page ---------*/
+
+#haut {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+#haut img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* Réseaux Sociaux */
+
+.social{
+    display: inline-block;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    position: fixed;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    position:relative;
+    top: 175px;
+}
+
+.upec {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(0%) translateY(-1%);
+    right: 1.5%;
+    width: 240px;
+    height: 108px;
+}
+
+
+
+
+.texte_footer{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.shadowbox1 {
+    text-align: center;
+    box-sizing: content-box;
+    font-size: 1.5em;
+    transform: translateY(15%) translateX(35%);
+    position: absolute;
+    display: block;
+    width: 55%;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    /* padding: 8px 12px; */
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    border-radius:50px;
+  }
+
+  .blocus{
+    height: 15%;
+    width: 30%;
+    position: relative;
+  }

@@ -1,0 +1,330 @@
+*{
+     scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 110px;
+    overflow-x: hidden;
+    position: relative;
+    background-color:#33597a;
+    width: auto; 
+}
+
+
+#haut {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 8;
+}
+
+
+
+#haut img {
+    width: 50x;
+    height: 50px;
+}
+
+header{
+    background-color: #33597a;
+    color: black;
+    display: block;
+    padding-bottom: 60px;
+}
+
+.nom{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    width: 20%;
+}
+/* --------Pied de page-----*/
+footer{
+    padding: 10px;
+    background-color:teal;
+    color: black;
+    width: 100%;
+    position: absolute; 
+    bottom: 0px;
+    height: 100px;
+}
+
+
+nav.menu-nav .barre_n li.bouton{
+    display: inline-block;
+}
+
+nav.menu-nav .barre_n a {
+    list-style-type:none;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    padding : 25px;
+}
+
+nav.menu-nav .barre_n li.bouton:hover a{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+    padding: 25px;
+}
+
+.barre_n{
+    background-color:teal;
+    padding: 23px;
+    margin: 0px;
+    margin-bottom: 2px;
+    margin-right: 0%;
+    width: 99%;
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 999;
+} 
+
+
+
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+/*SECTION INFOS*/
+
+.prez{
+    border-bottom: 2px dashed #ccc;
+}
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: teal;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.c55{
+    width: 55%;
+    background-color: #35b935;
+}
+
+.c60{
+    width: 60%;
+    background-color: #2ca72c;
+}
+.c70{
+    width: 70%;
+    background-color: #8B8;
+}
+
+.c75{
+        width: 75%;
+        background-color: #8B8;
+    }
+
+.c80{
+     width: 80%;
+     background-color: #228B22;
+    }
+
+.c85{
+    width: 85%;
+    background-color: #207e20;
+}
+.c90{
+    width: 90%;
+    background-color: #4B8;
+}
+.c95{
+    width: 95%;
+    background-color: #4B8;
+}
+.c100{
+    width: 100%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+
+.pourcent{
+    font-size: 2.5em;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: teal;
+    }
+    header h1{
+        width: 80%;
+    }
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    
+    .prez a:hover{
+        color: white;
+        background-color: black;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
+
+
+/* Photo Réseaux */
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+/* Eléments footer */
+.upec {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(0%) translateY(-1%);
+    right: 1.5%;
+    width: 240px;
+    height: 108px;
+}
+
+.texte_footer{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }

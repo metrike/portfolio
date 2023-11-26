@@ -1,0 +1,232 @@
+/*------------- Mise en page de la page ----------*/
+html {
+    height: 100%;
+    padding-top: 0px;
+    position: relative;
+    width: 100%;
+  }
+  body {
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    position: relative;
+    background-color:#062b34;
+    width: 100% ;
+    padding-bottom: 0px;
+}
+
+/*------Bare de Navigation*/
+
+nav.menu-nav .barre li.bouton{
+    display: inline-block;
+}
+
+nav.menu-nav .barre a {
+    list-style-type:none;
+    color: white;
+    background-color: teal;
+    text-decoration: none;
+    padding : 25px;
+}
+
+nav.menu-nav .barre li.bouton:hover a{
+    color:white;
+    background-color: black;
+    transition: 0.3s;
+    padding: 25px;
+}
+.barre{
+    background-color:teal;
+    padding: 23px;
+    margin: 0px;
+    margin-bottom: 2px;
+    margin-right: 0%;
+    width: 99%;
+    position: fixed;
+    display: block;
+    top: 0;
+    /* z-index: 999; */
+}
+/*---------- Haut de page ------*/
+
+
+header{
+    background-color: #33597a;
+    color: black;
+    display: block;
+    position: fixed;
+    z-index: 99999;
+}
+
+.nom{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3em;
+  width: 20%;
+  text-align: right;
+}
+/* --------Pied de page-----*/
+footer{
+  padding: 0px;
+  background-color:teal;
+  color: black;
+  width: 100%;
+  position: absolute; 
+  bottom: 0;
+}
+
+
+
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    z-index: 999;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+
+
+
+/*---------------- Bouton haut de page ---------*/
+
+#haut {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+}
+
+#haut img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+ 
+
+/* Réseaux Sociaux */
+
+.social{
+    display: inline-block;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+    position: fixed;
+    left: 0;
+}
+.social img{
+    width: 30px;
+    height: 30px;
+    position:relative;
+    top: 700px;
+}
+
+.upec {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-4%) translateY(-1%);
+    right: 1.5%;
+    width: 240px;
+    height: 108px;
+}
+
+
+
+.texte_footer{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.carte{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    /* z-index: 8;
+    transform: translateX(150%) translateY(50.5%); */
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .accueil {
+    position: absolute;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4vw;
+    width: 65%;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: translateX(0%) translateY(-200%) ;
+    animation: typing 4s steps(28), caret 1s steps(1) forwards;
+   
+  }
+ 
+  .shadowbox1 {
+    text-align: center;
+    box-sizing: content-box;
+    font-size: 1.5em;
+    /* height: 550px; */
+    transform: translateY(0%) translateX(3%);
+    position: relative;
+    display: block;
+    z-index: 8;
+    width: 45%;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    border-radius:50px;
+  }
+
+  .shadowbox2 {
+    text-align: center;
+    box-sizing: content-box;
+    font-size: 1.5em;
+    transform: translateY(-100%) translateX(125%);
+    position: relative;
+    display: block;
+    z-index: 3;
+    width: 40%;
+    border: 1px solid #333;
+    box-shadow: 8px 8px 5px #444;
+    padding: 8px 12px;
+    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+    border-radius: 50px;
+  }
+
+ #Accueil2 .Accueil2{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  justify-content: flex-start;
+ }
+  
+
+ .container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-fond{
+  background-image: url('image/accueil.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
